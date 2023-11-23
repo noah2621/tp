@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>trabajo 03</h1>
+    <sub>de Noah Belen T</sub>
+    <h3>1-1)¿Que es CSS?</h3>
+    <p>las siglas css son el nombre de una de las tres tecnologías que hacen la WEB. CSS significa Hojas de Estilo en Cascada en inglés Cascading Style Sheets y te dará los estilos (diseño) necesarios para que un sitio web o una aplicación web se vean visualmente bien.</p>
+    <H3>1-2) </H3>
+    <p>CSS se puede usar, por ejemplo, para cambiar la fuente, el color, el tamaño y el espaciado del contenido, para formar multiples columnas, añadir animaciones y otros elementos decorativos.</p>
+    <h3>1-3)</h3>
+    <p>La meta básica del lenguaje Cascading Stylesheet (CSS) es permitir al motor del navegador pintar elementos de la página con características específicas, como colores, posición o decoración</p>
+    <h3>1-4)Cuál es la anatomía de la regla de CSS? Agregar imagen explicativa y utilizando una lista descriptiva explicar sus elementos.</h3>
+    <p>Una regla de CSS está formada por una parte llamada “selector” y otra parte llamada “declaración” (puede haber una o varias dentro del mismo selector).</p>
+    <img src="https://pbs.twimg.com/media/FQWEUevXEAQ7jH3.jpg:large" alt="red conceptual" width="500px">
+    <h3>1-5) que es un selector de CSS?</h3>
+    <p>El elemento HTML en el que comienza la regla. Esta selecciona el(los) elemento(s) a dar estilo (en este caso, los elementos p). Para dar estilo a un elemento diferente, solo cambia el selector.</p>
+<h3>1-6)</h3>
+<p>tipos de <strong> selectores</strong>:</p>
+<p>
+    <ul>
+        <li><strong>Selector de id:</strong>
+            <p>El elemento en la página con el ID especificado (en una página HTML dada, solo se permite un único elemento por ID)</p>
+        </li>
+        <li><strong>Selector de clases:</strong>
+            <p>Los elementos en la página con la clase especificada (una clase puede aparecer varias veces en una página).</p>
+        </li>
+        <li><strong>selector universal:</strong>
+            <p>Se utiliza para seleccionar todos los elementos de la página</p>
+        </li>
+        <li>selector de etiquetas:
+            <p>Todos los elementos HTML del tipo especificado.</p>
+        </li>
+        <li>selector descendiente:
+            <p>El "␣" combinador (que se supone que representan un espacio, o mejor dicho uno o más espacios en blanco) combina dos selectores tales que el selector combinado incluye sólo los elementos que coinciden con el segundo selector para los que hay un elemento ancestro que coincide con el primer selector. Los selectores descendientes son similares a selectores hijos , pero que no requieren que la relación entre los elementos coincidentes ser estrictamente entre padres e hijos.</p>
+
+        </li>
+    </ul>
+</p>
+<h3>1-7)</h3>
+<p>cuando un navegador muestra un documento, combina el contenido con la informacion de estilo del documento, procesa este documento en una serie de estapas:</p>
+<p>
+    <ul>
+        <li>el navegador carga el html(un ejemplo, se conecta al wifi</li>
+        <li>convierte el html con un dom (modelo de objetos del documento), el dom representa el documento en la memoria del ordenador.</li>
+        <li>el navegador va a buscar la mayor parte de los recursos vinculados al documento mencionado, como las imagenes y los videos incrustados como tambien el CSS vinculado.</li>
+        <li>el navegador analiza el CSS y ordena en diferentes"cubos" las diferentes reglas segùn el tipo de selector, por ejemplo, elemento,clase,id,y asi sucesivamente.Con cada tipo de selector se calcula que reglas deben aplicarse y a que nodos en el DOM se les aplica el estilo segùn corresponda.</li>
+        <li><strong>el arbol de renderizacion</strong> presenta la estructura en que los nodos deben aparecer despues de aplicarle las reglas</li>
+        <li>en la <strong>etapa de pintura</strong> se muestra en pantalla el aspecto visual </li>
+        <li> la siguiente imagen es un grafico de ejemplo </li>
+
+        <img src="https://developer.mozilla.org/es/docs/Learn/CSS/First_steps/How_CSS_works/rendering.svg" alt="grafico" width="500px">
+    </ul>
+</p>
+<h3>1-8)Incluir la regla de enlace en el elemento HEAD del documento HTML.
+    Utilizar un atributo de estilo o style en el elemento HTML para especificar los estilos de esa clase o contenedor.
+    Vincula tu hoja de estilos CSS utilizando @import.
+    </h3>
+<h3>
+    propiedad:
+    <p>
+        <strong>color</strong>:
+        valores:
+        <ul>
+            <li>valor "named color":color:red</li>
+            <li> Valores "hex-color": #090</li>
+            <li>valor "color: rgb(34, 12, 64, 0.6)"</li>
+            <li>Valores "hsl()" color: hsl(30, 100%, 50%, 0.6)</li>
+            <li>Valores Globales:color: inherit;
+                color: initial;
+                color: unset</li>
+        </ul>
+
+        <h3>proìedad: background-color:</h3>
+        valores:
+        <ul>
+            <li>
+                color;
+                    Se puede especificar el color de fondo como un valor RGB hexa-decimal o regular, o utilizando una de las palabras claves predefinidas de color.
+            </li>
+            <li>transparent
+                El valor por defecto del color de fondo (background-color) es transparent tomando así el color del elemento que está justo debajo de él en el apilamiento.</li>
+                <li>/* Ajusta el texto del párrafo a un cuerpo de letra muy grande. */
+                    p { font-size: xx-large }
+                    
+                    /* Ajusta la cabecera de nivel 1 (h1) a 2,5 veces del tamaño
+                     * del texto. */
+                    h1 { font-size: 250% }
+                    
+                    /* Ajusta el texto incluido en span a 16px */
+                    span { font-size: 16px; }</li>
+                    <li>font-weight:
+                        normal
+Peso/grueso normal de la fuente. Igual que 400.
+
+
+                    </li>
+                    <li>bold
+                        Grueso ancho (negrita). Igual que 700.</li>
+                        <li>font-style:
+                            normal
+Escoge un tipo de letra clasificado como normal dentro de una familia de fuente.
+
+italic
+Escoge un tipo de letra etiquetado como italic, o, si una versión cursiva del tipo de letra no esté disponible, escoge un tipo de letra etiquetado como oblique en lugar de eso.
+
+oblique
+Escoge un tipo de letra etiquetado como oblique, o, si una versión oblique del tipo de letra no esté disponible, escoge un tipo de letra etiquetado como italic en lugar de eso.
+                        </li>
+                        <li>
+                            
+                        </li>
+        </ul>
+    </p>
+</h3>
+</body>
+</html>

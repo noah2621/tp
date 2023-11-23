@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Spider-Shop" content="width=device-width, initial-scale=1.0">
+    <title>Spider-Shop!!</title>
+   <style>
+       body {
+           background-color: #bababd;
+           margin: 0;
+           padding: 0;
+       }
+
+       .container {
+           /* Podés visitar: https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Flexbox#el_modelo_flexible para entender el modelo Flexbox */
+           display: flex; /* Establece el contenedor como un contenedor flex */
+           flex-wrap: wrap; /* Permite que los elementos se envuelvan en líneas adicionales si no hay suficiente espacio */
+           justify-content: center; /* Centra los elementos a lo largo del eje principal horizontal */
+           align-items: center; /* Centra los elementos a lo largo del eje secundario vertical */
+           background-color: #ff0000c2;
+           margin: 0 50px;/* Margen a la derecha y a la izquierda. El valor 0 es para el margen superior e inferior */
+
+       }
+
+       header {
+           display: flex; /* Establece el encabezado como un contenedor flex */
+           align-items: baseline; /* Alinea los elementos del encabezado a lo largo de la línea de base */
+           justify-content: space-between; /* Distribuye los elementos del encabezado de manera uniforme a lo largo del eje principal horizontal */
+           padding: 25px;
+       }
+       .container-title {
+           width: 100%;
+           text-align: center;
+           margin-bottom: 20px;
+       }
+
+       .container-image {
+           text-align: center;
+           margin-bottom: 20px;
+       }
+
+       .box {
+           width: 350px;
+           padding: 20px;
+           background-color: #ffffff5e;
+           margin: 10px;
+           text-align: center;
+       }
+
+   </style>
+</head>
+
+<body>
+   <header>
+       <div class="container-image">
+           <img src="assets/img/spider-shop.jpg" alt="Imagen de Producto" width="200px">
+       </div>
+       <div>
+           <h3 class="container-title">Es tu evento canon comprarlos</h3>
+       </div>
+   </header>
+   <main class="container">
+       <div class="box">
+           <img src="assets/img/miles_the_prowlwer.jpeg" width="300px">
+           <h3>Figura de accion, Miles Gonzalo Morales</h3>
+           <p>incluye mascara, expresiones, poses manos,base</p>
+           <a href="#">comprar</a>
+       </div>
+       <div class="box">
+           <img src="assets/img/images.jpeg" width="300px" height="450px">
+           <h3>Figura de accion,Miles Morales</h3>
+           <p>incluye mascara, expresiones,poses manos,base</p>
+           <a href="#">comprar</a>
+       </div>
+       <div class="box">
+           <img src="assets/img/Spider.Punk.5__scaled_800.jpg" width="300px" height="450px">
+           <h3>Figura de accion libre de capitalismo, Hobie Brown</h3>
+           <p>no incluye rutinas, pm, consistencia,comedia,chiste</p>
+           <a href="#">comprar</a>
+       </div>
+       <div class="box">
+           <img src="assets/img/miguel_mojarra.jpeg" width="300px">
+           <h3>Figura de accion, Miguel O'Hara</h3>
+           <p>No inluye Grabiela,medio fandom lo busca</p>
+           <a href="#">DAMELO</a>
+       </div>
+   </main>
+   <footer>
+    
+    hecho por noah belen torres 4º3º
+   </footer>
+</body>
+</html>
